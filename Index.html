@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="./Styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<main class="container" id="container">
+		<section class="form-container sign-up-container">
+			<form action="#" onsubmit="registerUser(event)">
+				<h1>Create Account</h1>
+
+				<input type="text" placeholder="Name" id="name" />
+				<input type="email" placeholder="Email" id="email" />
+				<input type="tel" name="Number" placeholder="Number" id="mobile">
+				<input type="password" placeholder="Password" id="password" />
+				<input type="password" placeholder="Confirm Password" id="confirm-password" />
+				<button type="submit" id="Register">Sign Up</button>
+			</form>
+		</section>
+		
+		<section class="form-container sign-in-container">
+			<form action="" id="login-form" onsubmit="login_User(event)">
+				<h1>Sign in</h1>
+				<input type="text" placeholder="Email or Number" id="login-id" aria-label="Email or Number" />
+				<input type="password" placeholder="Password" id="login-password" aria-label="Password" />
+				<a href="#">Forgot your password?</a>
+				<button type="submit" id="login">Sign In</button>
+			</form>
+		</section>
+		
+
+		<section class="overlay-container">
+			<form class="overlay">
+				<section class="overlay-panel overlay-left">
+					<h1>Welcome Back!</h1>
+					<p>To keep connected with us please login with your personal info</p>
+					<button type="reset" class="ghost" id="signIn">Sign In</button>
+				</section>
+				<section class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<button type="reset"  class="ghost" id="signUp">Sign Up</button>
+				</section>
+			</form>
+		</section>
+	</main>
+
+	<section id="pop-up">
+		<h1 id="pop-up-heading">1</h1>
+		<p id="pop-up-para"></p>
+		<div id="cancel-pop-up-button">
+			<button type="button" id="cancle-pop-up">Cancel</button>
+		</div>
+	</section>
+
+	<script src="./test2.js"></script>
+	<script src="./test.js"></script>
+
+</body>
+
+</html>
